@@ -11,41 +11,48 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 .container {
   border: solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 760px;
 }
 
 .container__asideleft {
   color: white;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .container__asideleft-circle {
-  border: solid;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
-.container__asideleft-title {
+.container__asideleft-score {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 p {
   display: flex;
   flex-direction: column;
-}
-
-.container__asideleft {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.card .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
 }
