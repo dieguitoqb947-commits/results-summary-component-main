@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  border: solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container__asideleft {
+  color: white;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.container__asideleft-circle {
+  border: solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.container__asideleft-title {
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__asideleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
