@@ -12,32 +12,42 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Hanken Grotesk", sans-serif;
+  background-color: rgb(229, 230, 230);
 }
 
 .container {
-  border: solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 760px;
+  width: auto;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 15px 60px rgba(57, 28, 184, 0.2);
 }
 
 .container__asideleft {
-  color: white;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
+  border-radius: 18px;
+  padding: 10px 50px;
+}
+
+.container__asideleft-title {
+  color: hsl(241, 100%, 89%);
+  font-size: 25px;
 }
 
 .container__asideleft-circle {
+  color: hsl(221, 100%, 96%);
   border-radius: 50%;
   width: 175px;
   height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background: radial-gradient(hsla(256, 72%, 46%, 1), hsla(241, 63%, 34%, 0));
 }
 
 .container__asideleft-score {
@@ -50,6 +60,74 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(225, 38%, 94%);
+}
+
+.container__asideleft-subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.container__asideright {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 50px;
+}
+
+.container__aside-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 25px;
+  width: 100%;
+}
+
+.container__aside-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.container__item-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.container__item-2 {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+.container__item-3 {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+
+.container__item-4 {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+
+.container__aside-button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container__aside-button:hover {
+  background: linear-gradient(rgb(91, 48, 209), rgb(40, 37, 170));
 }
 
 .attribution {
